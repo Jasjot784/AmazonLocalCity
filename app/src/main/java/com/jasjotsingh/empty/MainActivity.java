@@ -50,23 +50,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                //Toast.makeText(MainActivity.this, "You Clicked at " +properties[+ position], Toast.LENGTH_SHORT).show();
 
                 if(position==0){
-//                    Intent graphIntent = new Intent(MainActivity.this,GraphActivity.class);
-//                    startActivity(graphIntent);
+                    Intent graphIntent = new Intent(MainActivity.this,ShopkeeperActivity.class);
+                    startActivity(graphIntent);
                 }
                 if(position==1){
-//                    Intent tableIntent = new Intent(MainActivity.this,SpeedActivity.class);
-//                    startActivity(tableIntent);
+                    Intent tableIntent = new Intent(MainActivity.this,VerifiedActivity.class);
+                    startActivity(tableIntent);
                 }
                 if(position==2){
-//                    Intent locationIntent = new Intent(MainActivity.this, LocationActivity.class);
-//                    startActivity(locationIntent);
+                    Intent locationIntent = new Intent(MainActivity.this, ZomatoActivity.class);
+                    startActivity(locationIntent);
                 }
                 if(position==3){
-//                    Intent locationIntent = new Intent(MainActivity.this, ContactUsActivity.class);
-//                    startActivity(locationIntent);
+                    Intent locationIntent = new Intent(MainActivity.this, CatalogueActivity.class);
+                    startActivity(locationIntent);
                 }
             }
         });
